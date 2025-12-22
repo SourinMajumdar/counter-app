@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the app */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f8;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+}
+
+/* Count number */
+.count {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: transform 0.1s, background 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Theme toggle button */
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Dark mode styles */
+.container.dark {
+  background: #121212;
+}
+
+.container.dark .card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.container.dark button {
+  background: #333;
+  color: white;
+}
+
+.container.dark button:hover {
+  background: #444;
+}
+
+.container.dark .theme-btn {
+  color: #90caf9;
+}
+
+
+/* Disabled button (works for both light & dark mode) */
+button:disabled {
+  background: #b0b0b0;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Disabled button in dark mode */
+.container.dark button:disabled {
+  background: #555;
+  color: #999;
+}
