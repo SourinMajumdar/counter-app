@@ -4,7 +4,7 @@ A simple and beginner-friendly **React Counter Application** built to understand
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
 - Increment counter value
 - Decrement counter value (disabled at 0)
@@ -14,8 +14,42 @@ A simple and beginner-friendly **React Counter Application** built to understand
 
 ---
 
-## 🛠 Tech Stack
+### 🛠 Tech Stack
 
 - React (Vite)
 - JavaScript (ES6)
 - CSS
+---
+
+### 📂 Project Structure
+
+counter-app/  
+├── src/  
+│ ├── App.jsx  
+│ ├── App.css  
+│ └── main.jsx  
+├── index.html  
+├── package.json  
+└── README.md  
+
+---
+
+### 🧠 What I Learned
+
+- React useState for state management
+
+- Conditional rendering and disabling buttons
+
+- Handling user events in React
+
+- Implementing dark mode using state and CSS
+
+- Basic Git workflow (init, commit, push)
+
+### 🔮 Future Improvements
+
+- Persist theme preference using localStorage
+
+- Improve UI animations
+
+- Add keyboard shortcuts
